@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="calculatore">
+      <input type="text" readonly id="display" />
+      <div id="keys">
+        <button
+          type="button"
+          value="+"
+          onclick='appendToDisplay("+");'
+          class="operator-btn"
+        >
+          +
+        </button>
+        <button onclick="appendToDisplay('7')" value="7">7</button>
+        <button onclick="appendToDisplay('8')" value="8">8</button>
+        <button onclick="appendToDisplay('9')" value="9">9</button>
+        <button onclick="appendToDisplay('-') " value="-" class="operator-btn">
+          -
+        </button>
+        <button value="4" onclick="appendToDisplay('4') ">4</button>
+        <button value="5" onclick="appendToDisplay('5')">5</button>
+        <button value="6" onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')" value="*" class="operator-btn">
+          *
+        </button>
+        <button value="1" onclick="appendToDisplay('1')">1</button>
+        <button value="2" onclick="appendToDisplay('2')">2</button>
+        <button value="3" onclick="appendToDisplay('3')">3</button>
+        <button value="/" class="operator-btn" onclick="appendToDisplay('/')">
+          /
+        </button>
+        <button value="0" onclick="appendToDisplay('0')">0</button>
+        <button value="." onclick="appendToDisplay('.')">.</button>
+        <button value="=" onclick="calculate('=')">=</button>
+        <button value="C" class="operator-btn" onclick="clearToDisplay('C')">
+          C
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
